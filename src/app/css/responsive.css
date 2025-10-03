@@ -1,0 +1,88 @@
+/*************Responsive Styles*****************/
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+}
+
+/**********************iPhone Landscape*************/
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+}
+
+/*************************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+}
+
+/**************iPad Landscape***************/
+@media only screen and (max-width: 1024px) and (min-width: 986px) {
+  header .navLinks ul {
+    gap: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 820px) {
+  header .navLinks ul {
+    gap: 15px !important;
+  }
+  header .navLinks ul li a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .logo-col a {
+    font-size: 24px !important;
+  }
+
+  .banner-layout:before {
+    left: -50px;
+  }
+
+}
+
+/*******************************************/
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .btn-row {
+    flex-direction: column;
+  }
+
+  .primary-btn {
+    min-width: 200px;
+    font-size: 16px;
+    padding: 20px 40px;
+  }
+
+  .layout-img {
+    height: 400px;
+  }
+
+  .banner-layout:before {
+    top: 0;
+    height: 400px;
+    width: 500px;
+  }
+  .container {
+    max-width: 90% !important;
+  }
+
+  .layout-contents {
+    text-align: center;
+  }
+}
