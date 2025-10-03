@@ -52,7 +52,17 @@ function Header() {
                   {HeaderLinks.map(
                     (link: { id: number; title: string; href: string }) => (
                       <li key={link.id}>
-                        <Link href={link.href}>{link.title}</Link>
+                        {link.id === 6 ? (
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {link.title}
+                          </a>
+                        ) : (
+                          <Link href={link.href}>{link.title}</Link>
+                        )}
                       </li>
                     )
                   )}
@@ -127,13 +137,25 @@ function Header() {
             <ul className="space-y-1 px-4">
               {HeaderLinks.map((link: { id: number; title: string; href: string }) => (
                 <li key={link.id}>
-                  <Link
-                    href={link.href}
-                    className="mobile-menu-link block px-4 py-3 text-white/60 font-medium rounded-lg hover:bg-white/5 hover:text-white transition-all"
-                    onClick={closeMobileMenu}
-                  >
-                    {link.title}
-                  </Link>
+                  {link.id === 6 ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mobile-menu-link block px-4 py-3 text-white/60 font-medium rounded-lg hover:bg-white/5 hover:text-white transition-all"
+                      onClick={closeMobileMenu}
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="mobile-menu-link block px-4 py-3 text-white/60 font-medium rounded-lg hover:bg-white/5 hover:text-white transition-all"
+                      onClick={closeMobileMenu}
+                    >
+                      {link.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -40,9 +40,6 @@
 /*******************************************/
 
 @media only screen and (max-width: 768px) {
-  /* header {
-    display: none;
-  } */
   h1 {
     font-size: 25px;
     line-height: normal;
@@ -84,5 +81,9 @@
 
   .layout-contents {
     text-align: center;
+  }
+
+  .logo-col a {
+    font-size: 21px !important;
   }
 }
