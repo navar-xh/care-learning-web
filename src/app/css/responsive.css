@@ -40,9 +40,9 @@
 /*******************************************/
 
 @media only screen and (max-width: 768px) {
-  header {
+  /* header {
     display: none;
-  }
+  } */
   h1 {
     font-size: 25px;
     line-height: normal;
